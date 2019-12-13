@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>基于区块链的供应链金融</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <div class="container">
+		<h1>基于区块链的供应链金融</h1>
+        <h2>Blockchain-Based Supply Chain</h2>
+        <p>Project of Blockchain Principle and Technology by Willken Zhang</p>
+        
+		
+		<dl id="company-list">
+			<dt class='company-name'>Bank</dt>
+			<dd class='company'>
+                <img src="./imgs/bank.png" class="impart"/>
+                <div class="inputpart">
+                    <div style="margin-bottom:20px;">Company Name:   <input id="name_new" type="text"><br></div> 
+                    <div style="margin-bottom:20px;">Company Assets:<input id="assets_new" type="text"><br></div> 
+                    <div style="padding-left: 15px;"><button id="addCompany" class="btn">Add Company</button></div>
+                </div>
+                <div class="buttonpart">
+                    <div><button id="getBalance0" class="btn">Get Balance</button></div>
+                    <div><button id="getReceipt0" class="btn">Get Receipt</button></div>
+                    <div><button id="settleAccount0" class="btn">Settle Account</button></div>
+                </div>
+                <div id="address">
+                    <!-- <button id="test">test</button> -->
+                    <ul id="i">
+
+                    </ul>
+                </div>
+            </dd>
+
+            <dt class='company-name' >Company</dt>
+            <dd class='company'>
+                <div style="float: left;">
+                        <div><img src="./imgs/company.png" class="impart" /></div>
+                        <div>
+                            <section>Switch Accounts:</section>
+                            <select id="company_names">
+                            </select>
+                        </div>
+                </div>
+                <div class="inputpart">
+                    <div style="margin-bottom:20px;">Buy Sth From:<input id="address_goods" type="text" style="float: right;margin-right: 20px;"><br></div> 
+                    <div style="margin-bottom:20px;">Value:<input id="value_goods" type="text"style="float: right;margin-right: 20px;"><br></div>
+                    <div style="margin-bottom:20px;">Repay after:<input id="time" type="text"style="float: right;margin-right: 20px;"><br></div>  
+                    <div style="padding-left: 15px;"><button class="btn" id="goods_trade">Goods Trade</button></div>
+                </div>
+                <div class="inputpart">
+                    <div style="margin-bottom:20px;">Transfer Rec To:<input id="address_receipte" type="text" style="float: right;margin-right: 20px;"><br></div> 
+                    <div style="margin-bottom:20px;">Money:<input id="value_receipte" type="text"style="float: right;margin-right: 20px;"><br></div>
+                    <div style="margin-bottom:20px;">Receipt number:<input id="num_receipt" type="text"style="float: right;margin-right: 20px;"><br></div>  
+                    <div style="padding-left: 15px;"><button class="btn" id="receipt_trade">Receipt Trade</button></div> 
+                </div>
+                <div class="inputpart">
+                    <div style="margin-bottom:50px; margin-top: 45px;">Receipt number:<input id="num_finance" type="text" style="float: right;margin-right: 45px;width: 75px;"><br></div>
+                    <div><button class="btn" id="finance">Financing</button></div>  
+                </div>
+                <div class="buttonpart">
+                    <div><button id="getBalance" class="btn">Get Balance</button></div>
+                    <div><button id="getReceipt" class="btn">Get Receipt</button></div>
+                    <div><button id="settleAccount" class="btn">Settle Account</button></div>
+                </div>
+            </dd>
+		</dl>
+        <p style="margin-top: 0px;margin-bottom: 5px;">log:</p>
+		<div class='desc' id='event' ></div>
+
+
+    </div>
+
+</body>
+</html>
